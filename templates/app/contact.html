@@ -1,0 +1,515 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx" dir="ltr">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sharq Biznes Turar Joy Majmuasi</title>
+    <meta name="author" content="Sharq Biznes Turar Joy Majmuasi">
+    <meta name="description" content="Sharq Biznes Turar Joy Majmuasi">
+    <meta name="keywords" content="Sharq Biznes Turar Joy Majmuasi">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ main_info.logo_light.url }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ main_info.logo_light.url }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ main_info.logo_light.url }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ main_info.logo_light.url }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ main_info.logo_light.url }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ main_info.logo_light.url }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ main_info.logo_light.url }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ main_info.logo_light.url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ main_info.logo_light.url }}">
+    <link rel="icon" type="image/png" sizes="192x192"
+          href="{{ main_info.logo_light.url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ main_info.logo_light.url }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ main_info.logo_light.url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ main_info.logo_light.url }}">
+    <link rel="manifest" href="{% static "assets/img/favicons/manifest.json" %}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ main_info.logo_light.url }}">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Outfit:wght@100..900&amp;display=swap"
+          rel="stylesheet">
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static "assets/css/bootstrap.min.css" %}">
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="{% static "assets/css/fontawesome.min.css" %}">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="{% static "assets/css/magnific-popup.min.css" %}">
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="{% static "assets/css/swiper-bundle.min.css" %}">
+    <!-- datetimepicker -->
+    <link rel="stylesheet" href="{% static "assets/css/jquery.datetimepicker.min.css" %}">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="{% static "assets/css/style.css" %}">
+
+</head>
+
+<body class="bg-light">
+
+<!-- slider drag cursor -->
+<div class="slider-drag-cursor"><i class="fas fa-angle-left me-2"></i> DRAG <i class="fas fa-angle-right ms-2"></i>
+</div>
+
+<!--==============================
+ Preloader
+==============================-->
+<div id="preloader" class="preloader ">
+    <div id="loader" class="th-preloader">
+        <div class="animation-preloader">
+            <div class="txt-loading">
+                <span preloader-text="S" class="characters">S</span>
+
+                <span preloader-text="H" class="characters">H</span>
+
+                <span preloader-text="A" class="characters">A</span>
+
+                <span preloader-text="R" class="characters">R</span>
+
+                <span preloader-text="Q" class="characters">Q</span>
+            </div>
+        </div>
+    </div>
+</div> <!--==============================
+    Mobile Menu
+  ============================== -->
+<div class="th-menu-wrapper onepage-nav">
+    <div class="th-menu-area text-center">
+        <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+        <div class="mobile-logo">
+            <a href="{% url "index" %}">
+                <img src="{{ main_info.logo_dark.url }}" style="width: 128px" alt="Sharq">
+            </a>
+        </div>
+        <div class="th-mobile-menu">
+            <ul>
+                <li><a href="{% url "index" %}">
+                    Asosiy
+                </a></li>
+                <li><a href="{% url "about" %}">
+                    Biz Haqimizda
+                </a></li>
+                <li><a href="{% url 'contact' %}">
+                    Bog'lanish
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</div><!--==============================
+    Sidemenu
+============================== -->
+<div class="sidemenu-wrapper sidemenu-info d-none d-lg-block ">
+    <div class="sidemenu-content">
+        <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+        <div class="widget  ">
+            <div class="th-widget-about">
+                <div class="about-logo">
+                    <a href="{% url "index" %}"><img src="{{ main_info.logo_dark.url }}" style="width: 128px"
+                                                     alt="Realar"></a>
+                </div>
+                <p class="about-text"> O'z kelajaginggiz uchun shahar markaziga investitsiya kiriting</p>
+            </div>
+        </div>
+        <div class="widget  ">
+            <h3 class="widget_title">Bog'lanish uchun</h3>
+            <div class="th-widget-contact">
+                <div class="info-box_text">
+                    <div class="icon"><img src="{% static "assets/img/icon/location-dot.svg" %}" alt="img"></div>
+                    <div class="details">
+                        <p>Qarshi shahri, Tabassum mahallasi, Sharq 1</p>
+                    </div>
+                </div>
+                <div class="info-box_text">
+                    <div class="icon">
+                        <img src="{% static "assets/img/icon/phone.svg" %}" alt="img">
+                    </div>
+                    <div class="details">
+                        <p><a href="tel:+998781137079" class="info-box_link">+998 78 113 7079</a></p>
+                        <p><a href="tel:+998939000097" class="info-box_link">+998 93 900 00 97</a></p>
+                    </div>
+                </div>
+                <div class="info-box_text">
+                    <div class="icon">
+                        <img src="{% static "assets/img/icon/envelope.svg" %}" alt="img">
+                    </div>
+                    <div class="details">
+                        <p><a href="https://t.me/SHARQDEVELOPMENT_BOT" class="info-box_link">Telegram bot</a></p>
+                        <p><a href="https://t.me/SHARQDEVELOPMENT_BOT" class="info-box_link">@SHARQDEVELOPMENT_BOT</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widget newsletter-widget  ">
+            <h3 class="widget_title">Ijtimoiy tarmoqlar</h3>
+            <div class="th-social style2">
+                <a href="https://www.t.me/SHARQDEVELOPMENT_BOT/"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.instagram.com/sharq_development" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+</div><!--==============================
+	Header Area
+==============================-->
+<header class="th-header header-default">
+    <div class="sticky-wrapper">
+
+        <div class="menu-area">
+
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <div class="header-logo">
+                            <a href="{% url "index" %}">
+                                <img src="{{ main_info.logo_dark.url }}" style="width: 78px" alt="Realar">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <nav class="main-menu d-none d-lg-inline-block">
+                            <ul>
+                                <li><a href="{% url 'index' %}">
+                                    Asosiy
+                                </a></li>
+
+                                <li><a href="{% url 'about' %}">
+                                    Biz haqimizda
+                                </a></li>
+
+                                <li>
+                                    <a href="{% url "apartments" %}">
+                                        Xonadonlar
+                                    </a>
+                                </li>
+                                <li><a href="{% url "contact" %}">
+                                    Bog'lanish
+                                </a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-button d-flex d-lg-none">
+                            <button type="button" class="th-menu-toggle sidebar-btn">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-auto d-none d-xl-block">
+                        <div class="header-button">
+                            <a href="{% url "contact" %}" class="th-btn style-border th-btn-icon">Hoziroq bog'lanish</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</header>
+
+
+<!--==============================
+Breadcumb
+============================== -->
+<div class="breadcumb-wrapper " data-bg-src="{% static "assets/img/bg/breadcumb-bg.jpg" %}">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-9">
+                <div class="breadcumb-content">
+                    <h1 class="breadcumb-title">Bog'lanish</h1>
+                    <ul class="breadcumb-menu">
+                        <li><a href="{% url "index" %}">Asosiy</a></li>
+                        <li>Bog'lanish</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--==============================
+Bog'lanish Area
+==============================-->
+<div class="space">
+    <div class="container">
+        <div class="title-area text-center">
+            <span class="sub-title">Bog'lanish</span>
+            <h2 class="sec-title text-theme">Biz bilan bog‘laning</h2>
+        </div>
+        <div class="row gy-4 justify-content-center">
+            <div class="col-xl-4 col-lg-6">
+                <div class="about-contact-grid style2">
+                    <div class="about-contact-icon">
+                        <i class="fal fa-location-dot"></i>
+                    </div>
+                    <div class="about-contact-details">
+                        <h6 class="about-contact-details-title">Manzil</h6>
+                        <p class="about-contact-details-text">Tabassum mahallasi</p>
+                        <p class="about-contact-details-text">Qarshi shahri</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6">
+                <div class="about-contact-grid style2">
+                    <div class="about-contact-icon">
+                        <i class="fal fa-phone"></i>
+                    </div>
+                    <div class="about-contact-details">
+                        <h6 class="about-contact-details-title">Telefon raqam</h6>
+                        <p class="about-contact-details-text"><a href="tel:+998781137079">+998 78 113 7079</a></p>
+                        <p class="about-contact-details-text"><a href="tel:+998939000097">+998 93 900 00 97</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6">
+                <div class="about-contact-grid style2">
+                    <div class="about-contact-icon">
+    <i class="fab fa-telegram-plane"></i>
+</div>
+
+                    <div class="about-contact-details">
+                        <h6 class="about-contact-details-title">Telegram</h6>
+                        <p class="about-contact-details-text"><a
+                                href="#">Telegram bot</a></p>
+                        <p class="about-contact-details-text"><a href="https://t.me/SHARQDEVELOPMENT_BOT">@SHARQDEVELOPMENT_BOT</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--==============================
+Bog'lanish Area
+==============================-->
+
+<div class="space contact-area-3 z-index-common" data-bg-src="{% static "assets/img/bg/contact-bg-1-1.png" %}"
+     data-overlay="title"
+     data-opacity="3" id="contact-sec">
+    <div class="contact-bg-shape3-1 spin shape-mockup " data-bottom="5%" data-left="12%">
+        <img src="{% static "assets/img/shape/section_shape_2_1.jpg" %}" alt="img">
+    </div>
+    <div class="container">
+        <div class="row gx-35">
+            <div class="col-lg-6">
+                <div class="appointment-wrap2 bg-white me-xxl-5">
+                    <h2 class="form-title text-theme">Tashrifni rejalashtiring</h2>
+                    <form action="https://html.themeholy.com/realar/demo/mail.php" method="POST"
+                          class="appointment-form ajax-contact">
+                        <div class="row">
+                            <div class="form-group style-border style-radius col-12">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Ismingiz*">
+                                <i class="fal fa-user"></i>
+                            </div>
+                            <div class="form-group style-border style-radius col-12">
+                                <input type="email" class="form-control" name="email" id="email"
+                                       placeholder="Telefon raqam*">
+                                <i class="fal fa-contact-book"></i>
+                            </div>
+                            <div class="form-group style-border style-radius col-md-12">
+                                <select name="subject" id="subject" class="form-select">
+                                    <option value="" disabled selected hidden>Xonadon turini tanlang</option>
+                                    <option value="Real Estate">Real Estate</option>
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="Residencial">Residencial</option>
+                                    <option value="Deluxe">Deluxe</option>
+                                </select>
+                                <i class="fal fa-angle-down"></i>
+                            </div>
+                            <div class="col-12 form-group style-border style-radius">
+                                <i class="far fa-comments"></i>
+                                <textarea placeholder="Xabar qoldiring" class="form-control"></textarea>
+                            </div>
+                            <div class="col-12 form-btn mt-4">
+                                <button class="th-btn">Jo'natish<span class="btn-icon"><img
+                                        src="{% static "assets/img/icon/paper-plane.svg" %}" alt="img"></span></button>
+                            </div>
+                        </div>
+                        <p class="form-messages mb-0 mt-3"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="location-map contact-sec-map z-index-common">
+        <div class="contact-map">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1478.7950744614795!2d65.79002506126653!3d38.848710635144414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1738048443707!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="location-map-address bg-theme">
+            <div class="thumb">
+                <img src="{{ main_info.logo_dark.url }}" alt="img">
+            </div>
+            <div class="media-body">
+                <h4 class="title">Sotuv Ofisi</h4>
+                <p class="text">Qarshi shahar, Mo'jal:Ucell</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--==============================
+	Footer Area
+==============================-->
+
+<footer class="footer-wrapper footer-default bg-theme">
+    <div class="widget-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget footer-widget">
+                        <div class="th-widget-about">
+                            <div class="about-logo">
+                                <a href="{% url "index" %}"><img src="{{ main_info.logo_dark.url }}"
+                                                                 style="width: 128px"
+                                                                 alt="Realar"></a>
+                            </div>
+                            <p class="about-text">Sharq Development – Zamonaviy, qulay va xavfsiz hayot tarzi!
+                                Biz mukammal sifat, zamonaviy arxitektura va yuqori darajadagi qulayliklarni taqdim
+                                etamiz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget footer-widget">
+                        <h3 class="widget_title">Bog'lanish</h3>
+                        <div class="th-widget-contact">
+                            <div class="info-box_text">
+                                <div class="icon"><img src="{% static "assets/img/icon/location-dot.svg" %}" alt="img">
+                                </div>
+                                <div class="details">
+                                    <p>Tabassum mahallasi</p>
+                                    <p>Qarshi shahri</p>
+                                </div>
+                            </div>
+                            <div class="info-box_text">
+                                <div class="icon">
+                                    <img src="{% static "assets/img/icon/phone.svg" %}" alt="img">
+                                </div>
+                                <div class="details">
+                                    <p><a href="tel:+998781137079" class="info-box_link">+998 78 113 7079</a></p>
+                                    <p><a href="tel:+998939000097" class="info-box_link">+998 93 900 00 97</a></p>
+                                </div>
+                            </div>
+                            <div class="info-box_text">
+                                <div class="icon">
+                                    <img src="{% static "assets/img/icon/envelope.svg" %}" alt="img">
+                                </div>
+                                <div class="details">
+                                    <p><a class="info-box_link">Telegram bot</a>
+                                    </p>
+                                    <p><a href="https://t.me/SHARQDEVELOPMENT_BOT"
+                                          class="info-box_link">@SHARQDEVELOPMENT_BOT</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">Foydali havolalar</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="{% url "index" %}">Asosiy</a></li>
+                                <li><a href="{% url "about" %}">Biz haqimizda</a></li>
+                                <li><a href="{% url "apartments" %}">Xonadonlar</a></li>
+                                <li><a href="{% url "contact" %}">Bog'lanish</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="copyright-wrap bg-light">
+        <div class="container">
+            <div class="row gy-3 align-items-center">
+                <div class="col-lg-6">
+                    <p class="copyright-text">
+                        © 2025 <a href="{% url "index" %}">Sharq Development</a>. Barcha huquqlar himoyalangan.
+
+                    </p>
+
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="th-social justify-content-lg-end justify-content-center">
+                        <a target="_blank"   href="https://t.me/SHARQDEVELOPMENT_BOT/"><i class="fab fa-telegram"></i></a>
+                        <a  target="_blank"  href="https://www.instagram.com/sharq_development//"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!--********************************
+        Code End  Here
+******************************** -->
+
+<!-- Scroll To Top -->
+<div class="scroll-top">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+              style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+    </svg>
+</div>
+
+<!--==============================
+All Js File
+============================== -->
+<!-- Jquery -->
+<script src="{% static "assets/js/vendor/jquery-3.7.1.min.js" %}"></script>
+
+<!-- Swiper Js -->
+<script src="{% static "assets/js/swiper-bundle.min.js" %}"></script>
+<!-- Bootstrap -->
+<script src="{% static "assets/js/bootstrap.min.js" %}"></script>
+<!-- Magnific Popup -->
+<script src="{% static "assets/js/jquery.magnific-popup.min.js" %}"></script>
+<!-- Counter Up -->
+<script src="{% static "assets/js/jquery.counterup.min.js" %}"></script>
+<!-- Range Slider -->
+<script src="{% static "assets/js/jquery-ui.min.js" %}"></script>
+<!-- Isotope Filter -->
+<script src="{% static "assets/js/imagesloaded.pkgd.min.js" %}"></script>
+<script src="{% static "assets/js/isotope.pkgd.min.js" %}"></script>
+<!-- Gsap -->
+<script src="{% static "assets/js/gsap.min.js" %}"></script>
+<!-- DateTime JS -->
+<script src="{% static "assets/js/jquery.datetimepicker.min.js" %}"></script>
+
+<!-- 360 degree Js -->
+<script src="{% static "assets/js/threesixty.min.js" %}"></script>
+<script src="{% static "assets/js/panolens.min.js" %}"></script>
+
+
+<!-- Main Js File -->
+<script src="{% static "assets/js/main.js" %}"></script>
+</body>
+
+</html>

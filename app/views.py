@@ -1,0 +1,39 @@
+from django.shortcuts import render
+from django.views.generic import TemplateView
+
+from app.models import Banner, MainInfo, AboutImages, Prospecs, Apartments
+
+
+def index_view(request):
+    return render(request, 'app/index.html',
+                  context={"banners": Banner.objects.all(), "main_info": MainInfo.objects.first(),
+                           "about_images": AboutImages.objects.all(), "prospecs": Prospecs.objects.all(),
+                           "apartments": Apartments.objects.all()})
+
+
+def contact_view(request):
+    return render(request, 'app/contact.html',
+                  context={"main_info": MainInfo.objects.first(),})
+
+
+def about_view(request):
+    return render(request, 'app/about.html',
+                  context={"main_info": MainInfo.objects.first(),
+                           "prospecs": Prospecs.objects.all(),})
+
+
+
+from django.core.paginator import Paginator
+from django.shortcuts import render
+from .models import MainInfo, Apartments
+
+def apartments_view(request):
+    apartments_list = Apartments.objects.all()
+    paginator = Paginator(apartments_list, 6)  # Show 6 apartments per page
+    page_number = request.GET.get('page')
+    apartments = paginator.get_page(page_number)
+
+    return render(request, 'app/apartments.html', {
+        "main_info": MainInfo.objects.first(),
+        "apartments": apartments,
+    })
