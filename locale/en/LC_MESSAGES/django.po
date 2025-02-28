@@ -1,0 +1,324 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-26 00:12+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\root\settings.py:119
+msgid "Uzbek"
+msgstr ""
+
+#: .\root\settings.py:120
+msgid "Russian"
+msgstr ""
+
+#: .\root\settings.py:121
+msgid "English"
+msgstr ""
+
+msgid "Sharq Biznes Turar Joy Majmuasi"
+msgstr "Sharq Business Residential Complex"
+
+msgid "Asosiy"
+msgstr "Home"
+
+msgid "Biz haqimizda"
+msgstr "About Us"
+
+msgid "Xonadonlar"
+msgstr "Apartments"
+
+msgid "Bog'lanish"
+msgstr "Contact"
+
+msgid "O'z kelajaginggiz uchun shahar markaziga investitsiya kiriting"
+msgstr "Invest in the city center for your future"
+
+msgid "Bog'lanish uchun"
+msgstr "Contact Us"
+
+msgid "Qarshi shahri, Tabassum mahallasi, Sharq 1"
+msgstr "Karshi city, Tabassum neighborhood, Sharq 1"
+
+msgid "Ijtimoiy tarmoqlar"
+msgstr "Social Networks"
+
+msgid "Hoziroq bog'lanish"
+msgstr "Contact Us Now"
+
+msgid "Biz Haqimizda"
+msgstr "About Us"
+
+msgid ""
+"Bizning kompaniya, o'zining mukammal dizayni va yuqori sifatli qurilish "
+"materiallari bilan tanilgan, zamonaviy va premium turar-joylar yaratish "
+"bo‘yicha yetakchi hisoblanadi."
+msgstr ""
+"Our company, known for its excellent design and high-quality construction "
+"materials, is a leader in creating modern and premium residential complexes."
+
+msgid ""
+"Har bir loyihamizda biz mijozlarimizning ehtiyojlarini birinchi o‘rinda "
+"qo‘yib, ularning hayot sifatini oshirishga qaratilgan. Bizning binolarimiz "
+"nafaqat estetik jihatdan jozibali, balki qulaylik va xavfsizlikni "
+"ta'minlaydigan zamonaviy infratuzilmalarga ega."
+msgstr ""
+"In every project, we prioritize our customers' needs, aiming to enhance "
+"their quality of life. Our buildings are not only aesthetically appealing "
+"but also feature modern infrastructure ensuring comfort and safety."
+
+msgid ""
+"Sharq Development – bu zamonaviy arxitektura, yuqori sifatli qurilish "
+"materiallari va innovatsion texnologiyalar uyg‘unlashgan joy. Biz "
+"mijozlarimizga nafaqat uy, balki qulay va xavfsiz hayot tarzini taqdim "
+"etamiz. Har bir loyihamizda estetika, funksionallik va qulaylik "
+"birlashtirilgan bo‘lib, uyingiz shinamlik va farovonlik manbaiga aylanishi "
+"uchun har bir detalga alohida e’tibor qaratamiz."
+msgstr ""
+"Sharq Development is where modern architecture, high-quality construction "
+"materials, and innovative technologies come together. We offer our clients "
+"not just a home, but a comfortable and safe lifestyle. Each of our projects "
+"combines aesthetics, functionality, and convenience, with special attention "
+"to every detail to make your home a source of coziness and prosperity."
+
+msgid ""
+"Bizning turar joy majmualarimiz shaharning eng qulay hududlarida joylashgan "
+"bo‘lib, barcha zarur infratuzilmalar – savdo markazlari, bog‘lar, maktablar "
+"va transport tizimlariga yaqin. Xavfsizlik va farovonlikni birinchi o‘ringa "
+"qo‘ygan holda, biz mijozlarimizga biznes sinfidagi mukammal yashash "
+"sharoitlarini yaratamiz. Sharq Development bilan orzularingizdagi uyni "
+"hozirdan toping!"
+msgstr ""
+"Our residential complexes are located in the most convenient areas of the "
+"city, close to all necessary infrastructure – shopping centers, parks, "
+"schools, and transport systems. Prioritizing safety and well-being, we "
+"create premium-class living conditions for our clients. Find your dream "
+"home today with Sharq Development!"
+
+msgid ""
+"Sharq Development – bu zamonaviy turar joy majmualari yaratishda yetakchi "
+"kompaniya. Biz mijozlarimizga nafaqat mustahkam va estetik jihatdan jozibali "
+"uylarni, balki hayot uchun ideal muhitni taqdim etamiz. Har bir loyiha – bu "
+"yuqori sifatli qurilish materiallari, innovatsion yechimlar va qulay "
+"infratuzilma uyg‘unligi. Bizning asosiy maqsadimiz – sizga orzu qilgan "
+"uyingizni taqdim etish. Shahar markaziga yaqin, qulay joylashuv, xavfsiz "
+"hudud va zamonaviy texnologiyalar bilan jihozlangan uylarimiz hayotingizga "
+"quvonch va farovonlik olib keladi. Sharq Development – bu kelajakka "
+"ishonchli sarmoya!"
+
+msgstr ""
+"Sharq Development – a leading company in creating modern residential complexes. "
+"We offer our clients not only durable and aesthetically appealing homes but also "
+"an ideal living environment. Every project is a combination of high-quality construction "
+"materials, innovative solutions, and convenient infrastructure. Our main goal is to provide "
+"you with the home of your dreams. Located close to the city center, our homes come with a "
+"secure environment and modern technologies, bringing joy and comfort to your life. "
+"Sharq Development – a reliable investment in the future!"
+
+
+
+msgid "Premium Qurilish Materiallari"
+msgstr "Premium Construction Materials"
+
+msgid "Zamonaviy Dizayn"
+msgstr "Modern Design"
+
+msgid "Xavfsizlik"
+msgstr "Security"
+
+msgid "Yuqori Darajadagi Quvvat Manbalari"
+msgstr "High-Quality Power Sources"
+
+msgid "Bizga qo'ng'iroq qiling"
+msgstr "Call Us"
+
+msgid "Nega bizni tanlash kerak ?"
+msgstr "Why Choose Us?"
+
+msgid ""
+"Yuqori sifat va mustahkamlik – Qurilishda faqat premium materiallardan "
+"foydalanamiz, bu esa uylaringiz mustahkam va bardoshli bo‘lishini "
+"ta’minlaydi. Zamonaviy dizayn va qulaylik – Bizning loyihalarimiz estetik "
+"jihatdan jozibali bo‘lib, keng va yorug‘ xonalar hamda innovatsion yechimlar "
+"bilan ajralib turadi. Xavfsizlik kafolati – 24/7 video kuzatuv, qo‘riqlash "
+"tizimlari va yopiq hovlilar – bizda siz va oilangizning osoyishtaligi "
+"birinchi o‘rinda turadi. Qulay joylashuv – Turar joy majmualarimiz "
+"shaharning markaziy qismida joylashgan bo‘lib, maktablar, bog‘lar, savdo "
+"markazlari va transport vositalariga yaqin."
+
+msgstr ""
+"High quality and durability – We use only premium materials in construction, ensuring "
+"your home is strong and long-lasting. Modern design and comfort – Our projects are aesthetically "
+"pleasing, featuring spacious and bright rooms with innovative solutions. Security guarantee – "
+"24/7 video surveillance, security systems, and gated courtyards ensure the safety of you and "
+"your family. Convenient location – Our residential complexes are centrally located, providing easy "
+"access to schools, parks, shopping centers, and transport services."
+
+
+msgid "Biz bilan bog'lanish"
+msgstr "Contact Us"
+
+msgid ""
+"Sharq Development – Zamonaviy, qulay va xavfsiz hayot tarzi! Biz mukammal "
+"sifat, zamonaviy arxitektura va yuqori darajadagi qulayliklarni taqdim "
+"etamiz."
+
+msgstr ""
+"Sharq Development – A Modern, Comfortable, and Secure Lifestyle! We offer perfect quality, "
+"modern architecture, and a high level of comfort."
+
+msgid "Tabassum mahallasi"
+msgstr "Tabassum Neighborhood"
+
+msgid "Qarshi shahri"
+msgstr "Qarshi City"
+
+msgid "Foydali havolalar"
+msgstr "Useful Links"
+
+msgid "Barcha huquqlar himoyalangan."
+msgstr "All Rights Reserved."
+
+msgid "Ish Jarayoni"
+msgstr "Work Process"
+
+msgid "Ipoteka"
+msgstr "Mortgage"
+
+msgid "Uy Bron Qilish"
+msgstr "Reserve a Home"
+
+msgid "Ko'proq"
+msgstr "More"
+
+msgid ""
+"Bizning kompaniya, o'zining mukammal dizayni va yuqori sifatli qurilish materiallari bilan tanilgan, "
+"zamonaviy va premium turar-joylar yaratish bo‘yicha yetakchi hisoblanadi. "
+"Har bir loyihamizda biz mijozlarimizning ehtiyojlarini birinchi o‘rinda qo‘yib, "
+"ularning hayot sifatini oshirishga qaratilgan. Bizning binolarimiz nafaqat "
+"estetik jihatdan jozibali, balki qulaylik va xavfsizlikni ta'minlaydigan zamonaviy infratuzilmalarga ega."
+
+msgstr ""
+"Our company is a leader in creating modern and premium residential complexes, known for its "
+"exceptional design and high-quality construction materials. Every project prioritizes our clients' needs, "
+"focusing on enhancing their quality of life. Our buildings are not only aesthetically appealing but also equipped "
+"with modern infrastructure to ensure comfort and security."
+
+msgid "Bizning Afzalliklarimiz Nimadan Iborat"
+msgstr "Our Advantages"
+
+msgid ""
+"Bizning binolarimiz zamonaviy arxitektura, yuqori sifatli qurilish materiallari va ekotexnologiyalar bilan jihozlangan. "
+"Har bir xonadon keng va yorug‘, shu bilan birga atrof-muhitni himoya qilishga alohida e'tibor qaratilgan. "
+"Binolarimizda xavfsizlikning eng yuqori darajasi ta'minlangan, 24 soatlik xavfsizlik xizmati va video kuzatuv tizimlari mavjud. "
+"Joylashuvimiz esa shahar markaziga yaqin bo‘lib, barcha zarur infratuzilmalar, transport vositalari va savdo markazlariga "
+"oson kirish imkonini beradi. Xuddi shu tarzda, bizning binolarimiz sizga nafaqat sifatli turar joy, balki qulay va "
+"xavfsiz hayot tarzini taqdim etadi."
+msgstr ""
+"Our buildings feature modern architecture, high-quality construction materials, and eco-friendly technology. "
+"Each apartment is spacious and bright, with a strong focus on environmental sustainability. "
+"We ensure the highest level of security with 24/7 security services and surveillance systems. "
+"Our location is close to the city center, providing easy access to essential infrastructure, "
+"transport, and shopping centers. In this way, our buildings offer not only high-quality housing but also "
+"a comfortable and secure lifestyle."
+
+msgid "Mavjud xonadonlar"
+msgstr "Available Apartments"
+
+msgid "Xonadonlarimiz bilan tanishing"
+msgstr "Explore Our Apartments"
+
+msgid ""
+"Sizning premium xususiyatlarimizni o'rganing, ular zamonaviy qulayliklar, "
+"a'lo darajadagi dizayn va betakror joylashuvlarni taklif etadi. Siz yangi "
+"uyingizni yoki aqlli sarmoyani izlayotgan bo'lsangiz, har qanday ehtiyoj va "
+"byudjetga mos variantlarimiz mavjud."
+msgstr ""
+"Discover our premium features, which offer modern amenities, excellent design, and a unique location. "
+"Whether you are looking for a new home or a smart investment, we have options to suit every need and budget."
+
+msgid "To'liq ma'lumot olish"
+msgstr "Get Full Information"
+
+msgid "Kontakt qoldirish"
+msgstr "Leave Your Contact"
+
+msgid "Jo'natish"
+msgstr "Send"
+
+msgid "Manzil:"
+msgstr "Address:"
+
+msgid "Telefon:"
+msgstr "Phone:"
+
+msgid "Sotuv Ofisi"
+msgstr "Sales Office"
+
+msgid "Qarshi shahar, Mo'jal:Ucell"
+msgstr "Qarshi City, Landmark: Ucell"
+
+msgid "Tashrifni rejalashtiring"
+msgstr "Plan a visit"
+
+msgid "Ismingiz"
+msgstr "Your name"
+
+msgid "Telefon raqam"
+msgstr "Phone number"
+
+msgid "Xonadon turini tanlang"
+msgstr "Select apartment type"
+
+msgid "Xabar qoldiring"
+msgstr "Leave a message"
+
+msgid "Biz bilan bog‘laning"
+msgstr "Contact us"
+
+msgid "Manzil"
+msgstr "Address"
+
+msgid "Batafsil"
+msgstr "More details"
+
+msgid "Xonalar soni"
+msgstr "Number of rooms"
+
+msgid "ta"
+msgstr "pieces"
+
+msgid "Qidirish"
+msgstr "Search"
+
+msgid "Hammom"
+msgstr "Bathroom"
+
+msgid "Uy"
+msgstr "Apartment"
+
+
+
+
+
+
+
+
+
+
+
+

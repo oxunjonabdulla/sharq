@@ -1,0 +1,288 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-26 00:13+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\root\settings.py:119
+msgid "Uzbek"
+msgstr ""
+
+#: .\root\settings.py:120
+msgid "Russian"
+msgstr ""
+
+#: .\root\settings.py:121
+msgid "English"
+msgstr ""
+
+#: .\templates\app\about.html:10 .\templates\app\about.html:308
+#: .\templates\app\index.html:10 .\templates\app\index.html:312
+msgid "Sharq Biznes Turar Joy Majmuasi"
+msgstr ""
+
+#: .\templates\app\about.html:109 .\templates\app\about.html:199
+#: .\templates\app\about.html:286 .\templates\app\about.html:569
+#: .\templates\app\index.html:110 .\templates\app\index.html:151
+#: .\templates\app\index.html:654
+msgid "Asosiy"
+msgstr ""
+
+#: .\templates\app\about.html:111 .\templates\app\about.html:202
+#: .\templates\app\about.html:284 .\templates\app\about.html:570
+#: .\templates\app\index.html:113 .\templates\app\index.html:154
+#: .\templates\app\index.html:311 .\templates\app\index.html:655
+msgid "Biz haqimizda"
+msgstr ""
+
+#: .\templates\app\about.html:115 .\templates\app\about.html:206
+#: .\templates\app\about.html:571 .\templates\app\index.html:117
+#: .\templates\app\index.html:158 .\templates\app\index.html:656
+msgid "Xonadonlar"
+msgstr ""
+
+#: .\templates\app\about.html:119 .\templates\app\about.html:210
+#: .\templates\app\about.html:531 .\templates\app\about.html:572
+#: .\templates\app\index.html:121 .\templates\app\index.html:162
+#: .\templates\app\index.html:494 .\templates\app\index.html:657
+msgid "Bog'lanish"
+msgstr ""
+
+#: .\templates\app\about.html:136 .\templates\app\index.html:546
+msgid "O'z kelajaginggiz uchun shahar markaziga investitsiya kiriting"
+msgstr ""
+
+#: .\templates\app\about.html:140 .\templates\app\index.html:550
+msgid "Bog'lanish uchun"
+msgstr ""
+
+#: .\templates\app\about.html:145 .\templates\app\index.html:555
+msgid "Qarshi shahri, Tabassum mahallasi, Sharq 1"
+msgstr ""
+
+#: .\templates\app\about.html:170 .\templates\app\index.html:581
+msgid "Ijtimoiy tarmoqlar"
+msgstr ""
+
+#: .\templates\app\about.html:266 .\templates\app\index.html:221
+msgid "Hoziroq bog'lanish"
+msgstr ""
+
+#: .\templates\app\about.html:287
+msgid "Biz Haqimizda"
+msgstr ""
+
+#: .\templates\app\about.html:309
+msgid ""
+"Bizning kompaniya, o'zining mukammal dizayni va yuqori sifatli qurilish "
+"materiallari bilan tanilgan, zamonaviy va premium turar-joylar yaratish "
+"bo‘yicha yetakchi hisoblanadi."
+msgstr ""
+
+#: .\templates\app\about.html:311
+msgid ""
+"Har bir loyihamizda biz mijozlarimizning ehtiyojlarini birinchi o‘rinda "
+"qo‘yib, ularning hayot sifatini oshirishga qaratilgan. Bizning binolarimiz "
+"nafaqat estetik jihatdan jozibali, balki qulaylik va xavfsizlikni "
+"ta'minlaydigan zamonaviy infratuzilmalarga ega."
+msgstr ""
+
+#: .\templates\app\about.html:338
+msgid ""
+"Sharq Development – bu zamonaviy arxitektura, yuqori sifatli qurilish "
+"materiallari va innovatsion texnologiyalar uyg‘unlashgan joy. Biz "
+"mijozlarimizga nafaqat uy, balki qulay va xavfsiz hayot tarzini taqdim "
+"etamiz. Har bir loyihamizda estetika, funksionallik va qulaylik "
+"birlashtirilgan bo‘lib, uyingiz shinamlik va farovonlik manbaiga aylanishi "
+"uchun har bir detalga alohida e’tibor qaratamiz."
+msgstr ""
+
+#: .\templates\app\about.html:340
+msgid ""
+"Bizning turar joy majmualarimiz shaharning eng qulay hududlarida joylashgan "
+"bo‘lib, barcha zarur infratuzilmalar – savdo markazlari, bog‘lar, maktablar "
+"va transport tizimlariga yaqin. Xavfsizlik va farovonlikni birinchi o‘ringa "
+"qo‘ygan holda, biz mijozlarimizga biznes sinfidagi mukammal yashash "
+"sharoitlarini yaratamiz. Sharq Development bilan orzularingizdagi uyni "
+"hozirdan toping!"
+msgstr ""
+
+#: .\templates\app\about.html:344
+msgid ""
+"Sharq Development – bu zamonaviy turar joy majmualari yaratishda yetakchi "
+"kompaniya. Biz mijozlarimizga nafaqat mustahkam va estetik jihatdan jozibali "
+"uylarni, balki hayot uchun ideal muhitni taqdim etamiz. Har bir loyiha – bu "
+"yuqori sifatli qurilish materiallari, innovatsion yechimlar va qulay "
+"infratuzilma uyg‘unligi. Bizning asosiy maqsadimiz – sizga orzu qilgan "
+"uyingizni taqdim etish. Shahar markaziga yaqin, qulay joylashuv, xavfsiz "
+"hudud va zamonaviy texnologiyalar bilan jihozlangan uylarimiz hayotingizga "
+"quvonch va farovonlik olib keladi. Sharq Development – bu kelajakka "
+"ishonchli sarmoya!"
+msgstr ""
+
+#: .\templates\app\about.html:349 .\templates\app\index.html:318
+msgid "Premium Qurilish Materiallari"
+msgstr ""
+
+#: .\templates\app\about.html:351 .\templates\app\index.html:319
+msgid "Zamonaviy Dizayn"
+msgstr ""
+
+#: .\templates\app\about.html:354 .\templates\app\index.html:320
+msgid "Xavfsizlik"
+msgstr ""
+
+#: .\templates\app\about.html:356 .\templates\app\index.html:321
+msgid "Yuqori Darajadagi Quvvat Manbalari"
+msgstr ""
+
+#: .\templates\app\about.html:364
+msgid "Bizga qo'ng'iroq qiling"
+msgstr ""
+
+#: .\templates\app\about.html:395
+msgid "Nega bizni tanlash kerak ?"
+msgstr ""
+
+#: .\templates\app\about.html:396
+msgid ""
+"Yuqori sifat va mustahkamlik – Qurilishda faqat premium materiallardan "
+"foydalanamiz, bu esa uylaringiz mustahkam va bardoshli bo‘lishini "
+"ta’minlaydi. Zamonaviy dizayn va qulaylik – Bizning loyihalarimiz estetik "
+"jihatdan jozibali bo‘lib, keng va yorug‘ xonalar hamda innovatsion yechimlar "
+"bilan ajralib turadi. Xavfsizlik kafolati – 24/7 video kuzatuv, qo‘riqlash "
+"tizimlari va yopiq hovlilar – bizda siz va oilangizning osoyishtaligi "
+"birinchi o‘rinda turadi. Qulay joylashuv – Turar joy majmualarimiz "
+"shaharning markaziy qismida joylashgan bo‘lib, maktablar, bog‘lar, savdo "
+"markazlari va transport vositalariga yaqin."
+msgstr ""
+
+#: .\templates\app\about.html:402
+msgid "Biz bilan bog'lanish"
+msgstr ""
+
+#: .\templates\app\about.html:524 .\templates\app\index.html:609
+msgid ""
+"Sharq Development – Zamonaviy, qulay va xavfsiz hayot tarzi! Biz mukammal "
+"sifat, zamonaviy arxitektura va yuqori darajadagi qulayliklarni taqdim "
+"etamiz."
+msgstr ""
+
+#: .\templates\app\about.html:537 .\templates\app\index.html:503
+#: .\templates\app\index.html:622
+msgid "Tabassum mahallasi"
+msgstr ""
+
+#: .\templates\app\about.html:538 .\templates\app\index.html:502
+#: .\templates\app\index.html:623
+msgid "Qarshi shahri"
+msgstr ""
+
+#: .\templates\app\about.html:566 .\templates\app\index.html:651
+msgid "Foydali havolalar"
+msgstr ""
+
+#: .\templates\app\about.html:586 .\templates\app\index.html:673
+msgid "Barcha huquqlar himoyalangan."
+msgstr ""
+
+#: .\templates\app\index.html:249
+msgid "Ish Jarayoni"
+msgstr ""
+
+#: .\templates\app\index.html:251
+msgid "Ipoteka"
+msgstr ""
+
+#: .\templates\app\index.html:253
+msgid "Uy Bron Qilish"
+msgstr ""
+
+#: .\templates\app\index.html:262
+msgid "Ko'proq"
+msgstr ""
+
+#: .\templates\app\index.html:313
+msgid ""
+"Bizning kompaniya, o'zining mukammal dizayni va yuqori sifatli qurilish "
+"materiallari bilan tanilgan, zamonaviy va premium turar-joylar yaratish "
+"bo‘yicha yetakchi hisoblanadi. Har bir loyihamizda biz mijozlarimizning "
+"ehtiyojlarini birinchi o‘rinda qo‘yib, ularning hayot sifatini oshirishga "
+"qaratilgan. Bizning binolarimiz nafaqat estetik jihatdan jozibali, balki "
+"qulaylik va xavfsizlikni ta'minlaydigan zamonaviy infratuzilmalarga ega."
+msgstr ""
+
+#: .\templates\app\index.html:347
+msgid "Bizning Afzalliklarimiz Nimadan Iborat"
+msgstr ""
+
+#: .\templates\app\index.html:348
+msgid ""
+"Bizning binolarimiz zamonaviy arxitektura, yuqori sifatli qurilish "
+"materiallari va ekotexnologiyalar bilan jihozlangan. Har bir xonadon keng va "
+"yorug‘, shu bilan birga atrof-muhitni himoya qilishga alohida e'tibor "
+"qaratilgan. Binolarimizda xavfsizlikning eng yuqori darajasi ta'minlangan, "
+"24 soatlik xavfsizlik xizmati va video kuzatuv tizimlari mavjud. "
+"Joylashuvimiz esa shahar markaziga yaqin bo‘lib, barcha zarur "
+"infratuzilmalar, transport vositalari va savdo markazlariga oson kirish "
+"imkonini beradi. Xuddi shu tarzda, bizning binolarimiz sizga nafaqat sifatli "
+"turar joy, balki qulay va xavfsiz hayot tarzini taqdim etadi."
+msgstr ""
+
+#: .\templates\app\index.html:390
+msgid "Mavjud xonadonlar"
+msgstr ""
+
+#: .\templates\app\index.html:391
+msgid "Xonadonlarimiz bilan tanishing"
+msgstr ""
+
+#: .\templates\app\index.html:392
+msgid ""
+"Sizning premium xususiyatlarimizni o'rganing, ular zamonaviy qulayliklar, "
+"a'lo darajadagi dizayn va betakror joylashuvlarni taklif etadi. Siz yangi "
+"uyingizni yoki aqlli sarmoyani izlayotgan bo'lsangiz, har qanday ehtiyoj va "
+"byudjetga mos variantlarimiz mavjud."
+msgstr ""
+
+#: .\templates\app\index.html:424
+msgid "To'liq ma'lumot olish"
+msgstr ""
+
+#: .\templates\app\index.html:458
+msgid "Kontakt qoldirish"
+msgstr ""
+
+#: .\templates\app\index.html:472
+msgid "Jo'natish"
+msgstr ""
+
+#: .\templates\app\index.html:501
+msgid "Manzil:"
+msgstr ""
+
+#: .\templates\app\index.html:511
+msgid "Telefon:"
+msgstr ""
+
+#: .\templates\app\index.html:529
+msgid "Sotuv Ofisi"
+msgstr ""
+
+#: .\templates\app\index.html:530
+msgid "Qarshi shahar, Mo'jal:Ucell"
+msgstr ""

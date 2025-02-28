@@ -1,0 +1,6 @@
+from app.models import MainInfo
+from modeltranslation.translator import register, TranslationOptions
+
+@register(MainInfo)
+class ProductTranslationOptions(TranslationOptions):
+    fields = ("title", )

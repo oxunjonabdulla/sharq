@@ -1,0 +1,328 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-26 00:13+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\root\settings.py:119
+msgid "Uzbek"
+msgstr ""
+
+#: .\root\settings.py:120
+msgid "Russian"
+msgstr ""
+
+#: .\root\settings.py:121
+msgid "English"
+msgstr ""
+
+msgid "Sharq Biznes Turar Joy Majmuasi"
+msgstr "Жилой комплекс Шарк Бизнес"
+
+msgid "Asosiy"
+msgstr "Главная"
+
+msgid "Biz haqimizda"
+msgstr "О нас"
+
+msgid "Xonadonlar"
+msgstr "Квартиры"
+
+msgid "Bog'lanish"
+msgstr "Контакты"
+
+msgid "O'z kelajaginggiz uchun shahar markaziga investitsiya kiriting"
+msgstr "Инвестируйте в центр города ради своего будущего"
+
+msgid "Bog'lanish uchun"
+msgstr "Для связи"
+
+msgid "Qarshi shahri, Tabassum mahallasi, Sharq 1"
+msgstr "Город Карши, махалля Табассум, Sharq 1"
+
+msgid "Ijtimoiy tarmoqlar"
+msgstr "Социальные сети"
+
+msgid "Hoziroq bog'lanish"
+msgstr "Свяжитесь с нами сейчас"
+
+msgid "Biz Haqimizda"
+msgstr "О нас"
+
+msgid "Bizning kompaniya, o'zining mukammal dizayni va yuqori sifatli qurilish materiallari bilan tanilgan, zamonaviy va premium turar-joylar yaratish bo‘yicha yetakchi hisoblanadi."
+msgstr "Наша компания известна своим безупречным дизайном и высококачественными строительными материалами и является лидером в создании современных и премиальных жилых комплексов."
+
+msgid "Har bir loyihamizda biz mijozlarimizning ehtiyojlarini birinchi o‘rinda qo‘yib, ularning hayot sifatini oshirishga qaratilgan. Bizning binolarimiz nafaqat estetik jihatdan jozibali, balki qulaylik va xavfsizlikni ta'minlaydigan zamonaviy infratuzilmalarga ega."
+msgstr "В каждом нашем проекте мы ставим потребности клиентов на первое место, стремясь повысить качество их жизни. Наши здания не только эстетически привлекательны, но и оснащены современной инфраструктурой, обеспечивающей комфорт и безопасность."
+
+msgid "Sharq Development – bu zamonaviy arxitektura, yuqori sifatli qurilish materiallari va innovatsion texnologiyalar uyg‘unlashgan joy. Biz mijozlarimizga nafaqat uy, balki qulay va xavfsiz hayot tarzini taqdim etamiz. Har bir loyihamizda estetika, funksionallik va qulaylik birlashtirilgan bo‘lib, uyingiz shinamlik va farovonlik manbaiga aylanishi uchun har bir detalga alohida e’tibor qaratamiz."
+msgstr "Sharq Development – это сочетание современной архитектуры, высококачественных строительных материалов и инновационных технологий. Мы предлагаем нашим клиентам не просто жилье, а комфортный и безопасный образ жизни. В каждом нашем проекте объединены эстетика, функциональность и удобство, а особое внимание уделяется каждой детали, чтобы ваш дом стал источником уюта и благополучия."
+
+msgid "Bizning turar joy majmualarimiz shaharning eng qulay hududlarida joylashgan bo‘lib, barcha zarur infratuzilmalar – savdo markazlari, bog‘lar, maktablar va transport tizimlariga yaqin. Xavfsizlik va farovonlikni birinchi o‘ringa qo‘ygan holda, biz mijozlarimizga biznes sinfidagi mukammal yashash sharoitlarini yaratamiz. Sharq Development bilan orzularingizdagi uyni hozirdan toping!"
+msgstr "Наши жилые комплексы расположены в самых удобных районах города, вблизи всей необходимой инфраструктуры – торговых центров, парков, школ и транспортных узлов. Ставя безопасность и комфорт на первое место, мы создаем для наших клиентов идеальные условия для жизни бизнес-класса. Найдите дом своей мечты вместе с Sharq Development уже сегодня!"
+
+
+msgid ""
+"Sharq Development – bu zamonaviy turar joy majmualari yaratishda yetakchi "
+"kompaniya. Biz mijozlarimizga nafaqat mustahkam va estetik jihatdan jozibali "
+"uylarni, balki hayot uchun ideal muhitni taqdim etamiz. Har bir loyiha – bu "
+"yuqori sifatli qurilish materiallari, innovatsion yechimlar va qulay "
+"infratuzilma uyg‘unligi. Bizning asosiy maqsadimiz – sizga orzu qilgan "
+"uyingizni taqdim etish. Shahar markaziga yaqin, qulay joylashuv, xavfsiz "
+"hudud va zamonaviy texnologiyalar bilan jihozlangan uylarimiz hayotingizga "
+"quvonch va farovonlik olib keladi. Sharq Development – bu kelajakka "
+"ishonchli sarmoya!"
+msgstr ""
+"Sharq Development – ведущая компания по созданию современных жилых комплексов. "
+"Мы предлагаем нашим клиентам не только прочные и эстетически привлекательные дома, "
+"но и идеальную среду для жизни. Каждый проект – это сочетание "
+"высококачественных строительных материалов, инновационных решений и удобной "
+"инфраструктуры. Наша главная цель – предоставить вам дом вашей мечты. "
+"Дома, расположенные вблизи центра города, в безопасных районах и оборудованные "
+"современными технологиями, принесут в вашу жизнь радость и благополучие. "
+"Sharq Development – надежные инвестиции в будущее!"
+
+msgid "Premium Qurilish Materiallari"
+msgstr "Премиальные строительные материалы"
+
+msgid "Zamonaviy Dizayn"
+msgstr "Современный дизайн"
+
+msgid "Xavfsizlik"
+msgstr "Безопасность"
+
+msgid "Yuqori Darajadagi Quvvat Manbalari"
+msgstr "Высокий уровень энергоснабжения"
+
+msgid "Bizga qo'ng'iroq qiling"
+msgstr "Позвоните нам"
+
+msgid "Nega bizni tanlash kerak ?"
+msgstr "Почему выбирают нас?"
+
+msgid ""
+"Yuqori sifat va mustahkamlik – Qurilishda faqat premium materiallardan "
+"foydalanamiz, bu esa uylaringiz mustahkam va bardoshli bo‘lishini "
+"ta’minlaydi. Zamonaviy dizayn va qulaylik – Bizning loyihalarimiz estetik "
+"jihatdan jozibali bo‘lib, keng va yorug‘ xonalar hamda innovatsion yechimlar "
+"bilan ajralib turadi. Xavfsizlik kafolati – 24/7 video kuzatuv, qo‘riqlash "
+"tizimlari va yopiq hovlilar – bizda siz va oilangizning osoyishtaligi "
+"birinchi o‘rinda turadi. Qulay joylashuv – Turar joy majmualarimiz "
+"shaharning markaziy qismida joylashgan bo‘lib, maktablar, bog‘lar, savdo "
+"markazlari va transport vositalariga yaqin."
+msgstr ""
+"Высокое качество и надежность – мы используем только премиальные материалы в строительстве, "
+"что гарантирует прочность и долговечность ваших домов. Современный дизайн и комфорт – "
+"наши проекты эстетически привлекательны, отличаются просторными и светлыми комнатами, "
+"а также инновационными решениями. Гарантия безопасности – круглосуточное видеонаблюдение, "
+"охранные системы и закрытые дворы обеспечивают спокойствие вам и вашей семье. "
+"Удобное расположение – наши жилые комплексы находятся в центральных районах города, "
+"рядом со школами, парками, торговыми центрами и транспортной инфраструктурой."
+
+msgid "Biz bilan bog'lanish"
+msgstr "Свяжитесь с нами"
+
+msgid ""
+"Sharq Development – Zamonaviy, qulay va xavfsiz hayot tarzi! Biz mukammal "
+"sifat, zamonaviy arxitektura va yuqori darajadagi qulayliklarni taqdim "
+"etamiz."
+msgstr ""
+"Sharq Development – современный, комфортный и безопасный образ жизни! "
+"Мы предлагаем безупречное качество, современную архитектуру и высокий уровень удобств."
+
+msgid "Tabassum mahallasi"
+msgstr "Махалля Табассум"
+
+msgid "Qarshi shahri"
+msgstr "Город Карши"
+
+msgid "Foydali havolalar"
+msgstr "Полезные ссылки"
+
+
+#: .\templates\app\about.html:586 .\templates\app\index.html:673
+msgid "Barcha huquqlar himoyalangan."
+msgstr "Все права защищены."
+
+#: .\templates\app\index.html:249
+msgid "Ish Jarayoni"
+msgstr "Процесс работы"
+
+#: .\templates\app\index.html:251
+msgid "Ipoteka"
+msgstr "Ипотека"
+
+#: .\templates\app\index.html:253
+msgid "Uy Bron Qilish"
+msgstr "Бронирование жилья"
+
+#: .\templates\app\index.html:262
+msgid "Ko'proq"
+msgstr "Подробнее"
+
+#: .\templates\app\index.html:313
+msgid ""
+"Bizning kompaniya, o'zining mukammal dizayni va yuqori sifatli qurilish "
+"materiallari bilan tanilgan, zamonaviy va premium turar-joylar yaratish "
+"bo‘yicha yetakchi hisoblanadi. Har bir loyihamizda biz mijozlarimizning "
+"ehtiyojlarini birinchi o‘rinda qo‘yib, ularning hayot sifatini oshirishga "
+"qaratilgan. Bizning binolarimiz nafaqat estetik jihatdan jozibali, balki "
+"qulaylik va xavfsizlikni ta'minlaydigan zamonaviy infratuzilmalarga ega."
+msgstr ""
+"Наша компания, известная своим безупречным дизайном и высококачественными "
+"строительными материалами, является лидером в создании современных и "
+"премиальных жилых комплексов. В каждом нашем проекте мы ставим потребности "
+"наших клиентов на первое место, стремясь улучшить качество их жизни. Наши "
+"здания не только эстетически привлекательны, но и обладают современной "
+"инфраструктурой, обеспечивающей комфорт и безопасность."
+
+#: .\templates\app\index.html:347
+msgid "Bizning Afzalliklarimiz Nimadan Iborat"
+msgstr "Наши преимущества"
+
+#: .\templates\app\index.html:348
+msgid ""
+"Bizning binolarimiz zamonaviy arxitektura, yuqori sifatli qurilish "
+"materiallari va ekotexnologiyalar bilan jihozlangan. Har bir xonadon keng va "
+"yorug‘, shu bilan birga atrof-muhitni himoya qilishga alohida e'tibor "
+"qaratilgan. Binolarimizda xavfsizlikning eng yuqori darajasi ta'minlangan, "
+"24 soatlik xavfsizlik xizmati va video kuzatuv tizimlari mavjud. "
+"Joylashuvimiz esa shahar markaziga yaqin bo‘lib, barcha zarur "
+"infratuzilmalar, transport vositalari va savdo markazlariga oson kirish "
+"imkonini beradi. Xuddi shu tarzda, bizning binolarimiz sizga nafaqat sifatli "
+"turar joy, balki qulay va xavfsiz hayot tarzini taqdim etadi."
+msgstr ""
+"Наши здания оснащены современной архитектурой, высококачественными "
+"строительными материалами и экотехнологиями. Каждая квартира просторная и "
+"светлая, при этом особое внимание уделяется защите окружающей среды. В "
+"наших домах обеспечен высочайший уровень безопасности – круглосуточная "
+"охранная служба и системы видеонаблюдения. Расположение наших объектов "
+"позволяет легко добраться до всех необходимых инфраструктурных объектов, "
+"общественного транспорта и торговых центров. Таким образом, наши дома "
+"предлагают вам не только качественное жилье, но и комфортный и безопасный "
+"образ жизни."
+
+#: .\templates\app\index.html:390
+msgid "Mavjud xonadonlar"
+msgstr "Доступные квартиры"
+
+#: .\templates\app\index.html:391
+msgid "Xonadonlarimiz bilan tanishing"
+msgstr "Познакомьтесь с нашими квартирами"
+
+#: .\templates\app\index.html:392
+msgid ""
+"Sizning premium xususiyatlarimizni o'rganing, ular zamonaviy qulayliklar, "
+"a'lo darajadagi dizayn va betakror joylashuvlarni taklif etadi. Siz yangi "
+"uyingizni yoki aqlli sarmoyani izlayotgan bo'lsangiz, har qanday ehtiyoj va "
+"byudjetga mos variantlarimiz mavjud."
+msgstr ""
+"Ознакомьтесь с нашими премиальными характеристиками, которые предлагают "
+"современные удобства, превосходный дизайн и уникальное расположение. Если "
+"вы ищете новый дом или умное вложение, у нас есть варианты, подходящие под "
+"любой бюджет и потребности."
+
+#: .\templates\app\index.html:424
+msgid "To'liq ma'lumot olish"
+msgstr "Получить полную информацию"
+
+#: .\templates\app\index.html:458
+msgid "Kontakt qoldirish"
+msgstr "Оставить контакт"
+
+#: .\templates\app\index.html:472
+msgid "Jo'natish"
+msgstr "Отправить"
+
+#: .\templates\app\index.html:501
+msgid "Manzil:"
+msgstr "Адрес:"
+
+#: .\templates\app\index.html:511
+msgid "Telefon:"
+msgstr "Телефон:"
+
+#: .\templates\app\index.html:529
+msgid "Sotuv Ofisi"
+msgstr "Офис продаж"
+
+#: .\templates\app\index.html:530
+msgid "Qarshi shahar, Mo'jal:Ucell"
+msgstr "Город Карши, ориентир: Ucell"
+
+msgid "Telegram bot"
+msgstr "Телеграм-бот"
+
+msgid "Telegram"
+msgstr "Телеграм"
+
+msgid "Tashrifni rejalashtiring"
+msgstr "Запланируйте визит"
+
+msgid "Manzil"
+msgstr "Адрес"
+
+msgid "Ismingiz"
+msgstr "Ваше имя"
+
+msgid "Telefon raqam"
+msgstr "Номер телефона"
+
+msgid "Xonadon turini tanlang"
+msgstr "Выберите тип квартиры"
+
+msgid "Xabar qoldiring"
+msgstr "Оставить сообщение"
+
+msgid "Biz bilan bog‘laning"
+msgstr "Связаться с нами"
+
+msgid "Batafsil"
+msgstr "Подробнее"
+
+msgid "Xonalar soni"
+msgstr "Количество комнат"
+
+msgid "ta"
+msgstr "штук"
+
+msgid "Qidirish"
+msgstr "Поиск"
+
+msgid "Hammom"
+msgstr "Ванная комната"
+
+msgid "Uy"
+msgstr "Квартира"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

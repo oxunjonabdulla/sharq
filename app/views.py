@@ -1,7 +1,8 @@
+from django.core.paginator import Paginator
 from django.shortcuts import render
-from django.views.generic import TemplateView
 
-from app.models import Banner, MainInfo, AboutImages, Prospecs, Apartments
+from app.models import Banner, AboutImages, Prospecs
+from .models import MainInfo, Apartments
 
 
 def index_view(request):
@@ -13,19 +14,14 @@ def index_view(request):
 
 def contact_view(request):
     return render(request, 'app/contact.html',
-                  context={"main_info": MainInfo.objects.first(),})
+                  context={"main_info": MainInfo.objects.first(), })
 
 
 def about_view(request):
     return render(request, 'app/about.html',
                   context={"main_info": MainInfo.objects.first(),
-                           "prospecs": Prospecs.objects.all(),})
+                           "prospecs": Prospecs.objects.all(), })
 
-
-
-from django.core.paginator import Paginator
-from django.shortcuts import render
-from .models import MainInfo, Apartments
 
 def apartments_view(request):
     apartments_list = Apartments.objects.all()
@@ -37,3 +33,45 @@ def apartments_view(request):
         "main_info": MainInfo.objects.first(),
         "apartments": apartments,
     })
+
+
+def apartment_details(request):
+    return render(
+        request,
+        "app/apartment-details.html",
+        {
+            "main_info": MainInfo.objects.first()}
+    )
+
+
+
+def pricing_view(request):
+    return render(request, 'app/pricing.html',
+                  context={"main_info": MainInfo.objects.first(), })
+
+
+from urllib.parse import urlparse
+from django.conf import settings
+from django.http import HttpResponseRedirect
+from django.urls.base import resolve, reverse
+from django.urls.exceptions import Resolver404
+from django.utils import translation
+
+
+def set_language(request, language):
+    for lang, _ in settings.LANGUAGES:
+        translation.activate(lang)
+        try:
+            view = resolve(urlparse(request.META.get("HTTP_REFERER")).path)
+        except Resolver404:
+            view = None
+        if view:
+            break
+    if view:
+        translation.activate(language)
+        next_url = reverse(view.url_name, args=view.args, kwargs=view.kwargs)
+        response = HttpResponseRedirect(next_url)
+        response.set_cookie(settings.LANGUAGE_COOKIE_NAME, language)
+    else:
+        response = HttpResponseRedirect("/")
+    return response

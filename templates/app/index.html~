@@ -1,4 +1,5 @@
 {% load static %}
+{% load  i18n %}
 <!doctype html>
 <html class="no-js" lang="zxx" dir="ltr">
 
@@ -6,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Sharq Biznes Turar Joy Majmuasi</title>
+    <title>{% trans "Sharq Biznes Turar Joy Majmuasi" %}</title>
     <meta name="author" content="Sharq Biznes Turar Joy Majmuasi">
     <meta name="description" content="Sharq Biznes Turar Joy Majmuasi">
     <meta name="keywords" content="Sharq Biznes Turar Joy Majmuasi">
@@ -106,17 +107,18 @@
         <div class="th-mobile-menu">
             <ul>
                 <li><a href="{% url "index" %}">
-                    Asosiy
-                </a></li> <li><a href="{% url "about" %}">
-                    Biz haqimizda
+                    {% trans "Asosiy" %}
+                </a></li>
+                <li><a href="{% url "about" %}">
+                    {% trans "Biz haqimizda" %}
                 </a></li>
                 <li>
                     <a href="{% url "apartments" %}">
-                        Xonadonlar
+                        {% trans "Xonadonlar" %}
                     </a>
                 </li>
                 <li><a href="{% url "contact" %}">
-                    Bog'lanish
+                    {% trans "Bog'lanish" %}
                 </a></li>
             </ul>
         </div>
@@ -138,7 +140,7 @@
                     <div class="col-auto">
                         <div class="header-logo">
                             <a href="{% url 'index' %}">
-                                <img src="{{ main_info.logo_dark.url }}" style="width: 78px" alt="Realar">
+                                <img src="{{ main_info.logo_dark.url }}" style="width: 78px" alt="sharq">
                             </a>
                         </div>
                     </div>
@@ -146,21 +148,65 @@
                         <nav class="main-menu d-none d-lg-inline-block">
                             <ul>
                                 <li><a href="{% url 'index' %}">
-                                    Asosiy
+                                    {% trans "Asosiy" %}
                                 </a></li>
                                 <li><a href="{% url 'about' %}">
-                                    Biz haqimizda
+                                    {% trans "Biz haqimizda" %}
                                 </a></li>
                                 <li>
                                     <a href="{% url "apartments" %}">
-                                        Xonadonlar
+                                        {% trans "Xonadonlar" %}
                                     </a>
                                 </li>
                                 <li><a href="{% url "contact" %}">
-                                    Bog'lanish
+                                    {% trans "Bog'lanish" %}
                                 </a></li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="languageDropdown" role="button"
+                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                        {% with current_language=request.LANGUAGE_CODE %}
+                                            {% if current_language == "uz" %}
+                                                <img style="width: 44px;" src="{% static 'assets/img/flag/uz.png' %}"
+                                                     alt="Uzbek">
+                                            {% elif current_language == "en" %}
+                                                <img style="width: 44px;" src="{% static 'assets/img/flag/uk.png' %}"
+                                                     alt="English">
+                                            {% elif current_language == "ru" %}
+                                                <img style="width: 44px;"
+                                                     src="{% static 'assets/img/flag/russia.png' %}" alt="Russian">
+                                            {% endif %}
+                                        {% endwith %}
+{#                                        <img style="width: 40px;"#}
+{#                                             src="{% static 'assets/img/flag/uz.png' %}" alt="Language">#}
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                        <li>
+                                            <a href="{% url 'set_language' 'uz' %}" class="dropdown-item" style="width: 120px">
+                                                <img style="width: 40px;" src="{% static 'assets/img/flag/uz.png' %}"
+                                                     alt="Uzbek"> Uzbek
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'set_language' 'en' %}" class="dropdown-item" style="width: 120px">
+                                                <img style="width: 40px;" src="{% static 'assets/img/flag/uk.png' %}"
+                                                     alt="English"> English
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'set_language' 'ru' %}" class="dropdown-item" style="width: 120px">
+                                                <img style="width: 40px;"
+                                                     src="{% static 'assets/img/flag/russia.png' %}" alt="Russian">
+                                                Russian
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
                             </ul>
                         </nav>
+
                         <div class="header-button d-flex d-lg-none">
                             <button type="button" class="th-menu-toggle sidebar-btn">
                                 <span class="line"></span>
@@ -171,7 +217,8 @@
                     </div>
                     <div class="col-auto d-none d-xl-block">
                         <div class="header-button">
-                            <a href="#contact-sec" class="th-btn style-border th-btn-icon">Hoziroq bog'lanish</a>
+                            <a href="#contact-sec"
+                               class="th-btn style-border th-btn-icon">{% trans "Hoziroq bog'lanish" %}</a>
                         </div>
                     </div>
                 </div>
@@ -198,10 +245,12 @@ Hero Area
                                     <div class="hero-style5 text-center">
                                         <div class="btn-wrap justify-content-center" data-ani="slideindown"
                                              data-ani-delay="0.3s">
-                                            <a href="#" class="th-btn style-border th-btn-icon">Ish Jarayoni</a>
-                                            <a href="#" class="th-btn style-border th-btn-icon">Ipoteka</a>
                                             <a href="#"
-                                               class="th-btn style-border th-btn-icon">Uy Bron Qilish</a>
+                                               class="th-btn style-border th-btn-icon">{% trans "Ish Jarayoni" %}</a>
+                                            <a href="#"
+                                               class="th-btn style-border th-btn-icon">{% trans "Ipoteka" %}</a>
+                                            <a href="#"
+                                               class="th-btn style-border th-btn-icon">{% trans "Uy Bron Qilish" %}</a>
                                         </div>
                                         <h1 class="hero-title text-white">
                                             <span class="title1" data-ani="slideindown" data-ani-delay="0.3s">
@@ -210,7 +259,7 @@ Hero Area
                                                 {{ banner.title_part2 }} </span>
                                         </h1>
                                         <a href="#about-sec" class="th-btn style4 th-btn-icon" data-ani="slideinup"
-                                           data-ani-delay="0.6s">Ko'proq</a>
+                                           data-ani-delay="0.6s">{% trans "Ko'proq" %}</a>
                                     </div>
                                 </div>
                             </div>
@@ -259,21 +308,17 @@ About Area
             </div>
             <div class="col-xl-6">
                 <div class="title-area mb-32">
-                    <span class="sub-title">Biz haqimizda</span>
-                    <h2 class="sec-title text-theme">Sharq Biznes Turar Joy Majmuasi</h2>
-                    <p class="sec-text text-theme">Bizning kompaniya, o'zining mukammal dizayni va yuqori sifatli
-                        qurilish materiallari bilan tanilgan, zamonaviy va premium turar-joylar yaratish bo‘yicha
-                        yetakchi hisoblanadi. Har bir loyihamizda biz mijozlarimizning ehtiyojlarini birinchi o‘rinda
-                        qo‘yib, ularning hayot sifatini oshirishga qaratilgan. Bizning binolarimiz nafaqat estetik
-                        jihatdan jozibali, balki qulaylik va xavfsizlikni ta'minlaydigan zamonaviy infratuzilmalarga
-                        ega.</p>
+                    <span class="sub-title">{% trans "Biz haqimizda" %}</span>
+                    <h2 class="sec-title text-theme">{% trans "Sharq Biznes Turar Joy Majmuasi" %}</h2>
+                    <p class="sec-text text-theme">{% trans "Bizning kompaniya, o'zining mukammal dizayni va yuqori sifatli qurilish materiallari bilan tanilgan, zamonaviy va premium turar-joylar yaratish bo‘yicha yetakchi hisoblanadi. Har bir loyihamizda biz mijozlarimizning ehtiyojlarini birinchi o‘rinda qo‘yib, ularning hayot sifatini oshirishga qaratilgan. Bizning binolarimiz nafaqat estetik jihatdan jozibali, balki qulaylik va xavfsizlikni ta'minlaydigan zamonaviy infratuzilmalarga ega." %}</p>
+
                 </div>
                 <div class="checklist style7">
                     <ul>
-                        <li>Premium Qurilish Materiallari</li>
-                        <li>Zamonaviy Dizayn</li>
-                        <li>Xavfsizlik</li>
-                        <li>Yuqori Darajadagi Quvvat Manbalari</li>
+                        <li>{% trans "Premium Qurilish Materiallari" %}</li>
+                        <li>{% trans "Zamonaviy Dizayn" %}</li>
+                        <li>{% trans "Xavfsizlik" %}</li>
+                        <li>{% trans "Yuqori Darajadagi Quvvat Manbalari" %}</li>
                     </ul>
                 </div>
             </div>
@@ -299,15 +344,9 @@ Afzalliklar Area
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-6">
                 <div class="title-area">
-                    <h2 class="sec-title">Bizning Afzalliklarimiz Nimadan Iborat</h2>
-                    <p class="sec-text">Bizning binolarimiz zamonaviy arxitektura, yuqori sifatli qurilish materiallari
-                        va ekotexnologiyalar bilan jihozlangan. Har bir xonadon keng va yorug‘, shu bilan birga
-                        atrof-muhitni himoya qilishga alohida e'tibor qaratilgan. Binolarimizda xavfsizlikning eng
-                        yuqori darajasi ta'minlangan, 24 soatlik xavfsizlik xizmati va video kuzatuv tizimlari mavjud.
-                        Joylashuvimiz esa shahar markaziga yaqin bo‘lib, barcha zarur infratuzilmalar, transport
-                        vositalari va savdo markazlariga oson kirish imkonini beradi. Xuddi shu tarzda, bizning
-                        binolarimiz sizga nafaqat sifatli turar joy, balki qulay va xavfsiz hayot tarzini taqdim
-                        etadi.</p>
+                    <h2 class="sec-title">{% trans "Bizning Afzalliklarimiz Nimadan Iborat" %}</h2>
+                    <p class="sec-text">{% trans "Bizning binolarimiz zamonaviy arxitektura, yuqori sifatli qurilish materiallari va ekotexnologiyalar bilan jihozlangan. Har bir xonadon keng va yorug‘, shu bilan birga atrof-muhitni himoya qilishga alohida e'tibor qaratilgan. Binolarimizda xavfsizlikning eng yuqori darajasi ta'minlangan, 24 soatlik xavfsizlik xizmati va video kuzatuv tizimlari mavjud. Joylashuvimiz esa shahar markaziga yaqin bo‘lib, barcha zarur infratuzilmalar, transport vositalari va savdo markazlariga oson kirish imkonini beradi. Xuddi shu tarzda, bizning binolarimiz sizga nafaqat sifatli turar joy, balki qulay va xavfsiz hayot tarzini taqdim etadi." %}</p>
+
                 </div>
             </div>
         </div>
@@ -348,14 +387,10 @@ Xonadonlar Area
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="title-area text-center">
-                    <span class="sub-title text-white">Mavjud xonadonlar</span>
-                    <h2 class="sec-title text-white">Xonadonlarimiz bilan tanishing</h2>
-                    <p class="sec-text text-white">Sizning premium xususiyatlarimizni o'rganing, ular zamonaviy
-                        qulayliklar, a'lo darajadagi dizayn va betakror joylashuvlarni taklif etadi. Siz yangi uyingizni
-                        yoki aqlli sarmoyani izlayotgan bo'lsangiz, har qanday ehtiyoj va byudjetga mos variantlarimiz
-                        mavjud.
+                    <span class="sub-title text-white">{% trans "Mavjud xonadonlar" %}</span>
+                    <h2 class="sec-title text-white">{% trans "Xonadonlarimiz bilan tanishing" %}</h2>
+                    <p class="sec-text text-white">{% trans "Sizning premium xususiyatlarimizni o'rganing, ular zamonaviy qulayliklar, a'lo darajadagi dizayn va betakror joylashuvlarni taklif etadi. Siz yangi uyingizni yoki aqlli sarmoyani izlayotgan bo'lsangiz, har qanday ehtiyoj va byudjetga mos variantlarimiz mavjud." %}</p>
 
-                    </p>
                 </div>
             </div>
         </div>
@@ -386,7 +421,7 @@ Xonadonlar Area
                                     </div>
                                     <div class="btn-wrap">
                                         <a href="#contact-sec"
-                                           class="th-btn style-border th-btn-icon">To'liq ma'lumot olish</a>
+                                           class="th-btn style-border th-btn-icon">{% trans "To'liq ma'lumot olish" %}</a>
                                     </div>
                                 </div>
                             </div>
@@ -420,21 +455,21 @@ Appointment Area
             </div>
             <div class="col-lg-7">
                 <div class="title-area mb-35">
-                    <h2 class="sec-title text-white">Kontakt qoldirish</h2>
+                    <h2 class="sec-title text-white">{% trans "Kontakt qoldirish" %}</h2>
                 </div>
                 <form action="https://html.themeholy.com/realar/demo/mail.php" method="POST"
                       class="appointment-form ajax-contact me-xl-5">
                     <div class="row">
                         <div class="form-group style-border3 col-md-6">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Ism">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="{% trans "Ism" %}">
                             <i class="fal fa-user"></i>
                         </div>
                         <div class="form-group style-border3 col-md-6">
-                            <input type="tel" class="form-control" name="email" id="email" placeholder="Telefon">
+                            <input type="tel" class="form-control" name="email" id="email" placeholder="{% trans "Telefon" %}">
                             <i class="fal fa-envelope"></i>
                         </div>
                         <div class="col-12 form-btn mt-4">
-                            <button class="th-btn style-border">Jo'natish <span class="btn-icon"><img
+                            <button class="th-btn style-border">{% trans "Jo'natish" %} <span class="btn-icon"><img
                                     src="{% static "assets/img/icon/paper-plane.svg" %}" alt="img"></span></button>
                         </div>
                     </div>
@@ -456,16 +491,16 @@ Contact Area
         <div class="row gx-35">
             <div class="col-lg-5">
                 <div class="title-area">
-                    <h2 class="sec-title">Bog'lanish</h2>
+                    <h2 class="sec-title">{% trans "Bog'lanish" %}</h2>
                 </div>
                 <div class="about-contact-grid">
                     <div class="about-contact-icon text-white">
                         <img src="{% static "assets/img/icon/location-dot.svg" %}" alt="icon">
                     </div>
                     <div class="about-contact-details">
-                        <h6 class="about-contact-details-title">Manzil:</h6>
-                        <p class="about-contact-details-text">Qarshi shahri</p>
-                        <p class="about-contact-details-text">Tabassum mahallasi</p>
+                        <h6 class="about-contact-details-title">{% trans "Manzil:" %}</h6>
+                        <p class="about-contact-details-text">{% trans "Qarshi shahri" %}</p>
+                        <p class="about-contact-details-text">{% trans "Tabassum mahallasi" %}</p>
                     </div>
                 </div>
                 <div class="about-contact-grid">
@@ -473,7 +508,7 @@ Contact Area
                         <img src="{% static "assets/img/icon/phone.svg" %}" alt="icon">
                     </div>
                     <div class="about-contact-details">
-                        <h6 class="about-contact-details-title">Telefon:</h6>
+                        <h6 class="about-contact-details-title">{% trans "Telefon:" %}</h6>
                         <p class="about-contact-details-text"><a href="tel:998781137079">+998 78 113 7079</a></p>
                     </div>
                 </div>
@@ -491,14 +526,12 @@ Contact Area
                 <img src="{{ main_info.logo_dark.url }}" alt="img">
             </div>
             <div class="media-body">
-                <h4 class="title">Sotuv Ofisi</h4>
-                <p class="text">Qarshi shahar, Mo'jal:Ucell</p>
+                <h4 class="title">{% trans "Sotuv Ofisi" %}</h4>
+                <p class="text">{% trans "Qarshi shahar, Mo'jal:Ucell" %}</p>
             </div>
         </div>
     </div>
 </div>
-
-
 
 
 <div class="sidemenu-wrapper sidemenu-info d-none d-lg-block ">
@@ -508,18 +541,18 @@ Contact Area
             <div class="th-widget-about">
                 <div class="about-logo">
                     <a href="{% url "index" %}"><img src="{{ main_info.logo_dark.url }}" style="width: 128px"
-                                                     alt="Realar"></a>
+                                                     alt="#"></a>
                 </div>
-                <p class="about-text"> O'z kelajaginggiz uchun shahar markaziga investitsiya kiriting</p>
+                <p class="about-text">{% trans "O'z kelajaginggiz uchun shahar markaziga investitsiya kiriting" %}</p>
             </div>
         </div>
         <div class="widget  ">
-            <h3 class="widget_title">Bog'lanish uchun</h3>
+            <h3 class="widget_title">{% trans "Bog'lanish uchun" %}</h3>
             <div class="th-widget-contact">
                 <div class="info-box_text">
                     <div class="icon"><img src="{% static "assets/img/icon/location-dot.svg" %}" alt="img"></div>
                     <div class="details">
-                        <p>Qarshi shahri, Tabassum mahallasi, Sharq 1</p>
+                        <p>{% trans "Qarshi shahri, Tabassum mahallasi, Sharq 1" %}</p>
                     </div>
                 </div>
                 <div class="info-box_text">
@@ -528,7 +561,7 @@ Contact Area
                     </div>
                     <div class="details">
                         <p><a target="_blank" href="tel:+998781137079" class="info-box_link">+998 78 113 7079</a></p>
-                        <p><a  target="_blank" href="tel:+998939000097" class="info-box_link">+998 93 900 00 97</a></p>
+                        <p><a target="_blank" href="tel:+998939000097" class="info-box_link">+998 93 900 00 97</a></p>
                     </div>
                 </div>
                 <div class="info-box_text">
@@ -536,18 +569,19 @@ Contact Area
                         <i class="fab fa-telegram-plane"></i>
                     </div>
                     <div class="details">
-                        <p><a  target="_blank" href="https://t.me/SHARQDEVELOPMENT_BOT" class="info-box_link">Telegram bot</a></p>
-                        <p><a target="_blank"  href="https://t.me/SHARQDEVELOPMENT_BOT" class="info-box_link">@SHARQDEVELOPMENT_BOT</a>
+                        <p><a target="_blank" href="https://t.me/SHARQDEVELOPMENT_BOT" class="info-box_link">Telegram
+                            bot</a></p>
+                        <p><a target="_blank" href="https://t.me/SHARQDEVELOPMENT_BOT" class="info-box_link">@SHARQDEVELOPMENT_BOT</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="widget newsletter-widget  ">
-            <h3 class="widget_title">Ijtimoiy tarmoqlar</h3>
+            <h3 class="widget_title">{% trans "Ijtimoiy tarmoqlar" %}</h3>
             <div class="th-social style2">
-                <a  target="_blank" href="https://www.t.me/SHARQDEVELOPMENT_BOT/"><i class="fab fa-telegram"></i></a>
-                <a target="_blank"  href="https://www.instagram.com/sharq_development"><i
+                <a target="_blank" href="https://www.t.me/SHARQDEVELOPMENT_BOT/"><i class="fab fa-telegram"></i></a>
+                <a target="_blank" href="https://www.instagram.com/sharq_development"><i
                         class="fab fa-instagram"></i></a>
                 <a href="tel:+998781137079"><i class="fal fa-phone"></i></a>
             </div>
@@ -555,91 +589,6 @@ Contact Area
     </div>
 </div>
 
-
-
-<!--==============================
- Popup Modal v1
-============================== -->
-{#<div class="th-modal modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">#}
-{#    <div class="modal-dialog modal-xl">#}
-{#        <div class="modal-content">#}
-{#            <div class="container">#}
-{#                <button type="button" class="icon-btn btn-close bg-title-dark" data-bs-dismiss="modal"#}
-{#                        aria-label="Close"><i class="fa-regular fa-xmark"></i></button>#}
-{#                <div class="page-single bg-title-dark">#}
-{#                    <div class="page-img mb-30">#}
-{#                        <img class="w-100 rounded-20" src="{% static "assets/img/project/project_pop1_1.png" %}"#}
-{#                             alt="portfolio Image">#}
-{#                    </div>#}
-{#                    <div class="page-content">#}
-{#                        <h2 class="h3 page-title text-white fw-medium">Where Visibility Meets Success</h2>#}
-{#                        <div class="row gy-30">#}
-{#                            <div class="col-xl-7">#}
-{#                                <p class="mb-20 text-light">The timeline varies depending on the complexity of the#}
-{#                                    project. Simple projects may take a few weeks, while more complex ones could extend#}
-{#                                    to several months. Timelines are influenced by factors like scope, feedback#}
-{#                                    iterations, and client responsiveness.</p>#}
-{##}
-{#                                <p class="mb-xl-4 mb-0 text-light">Project timelines vary based on complexity and scope.#}
-{#                                    Small projects may take a few weeks, while larger ones could span several months.#}
-{#                                    Timelines are established during project kickoff. We use a range of#}
-{#                                    industry-standard tools such as Sketch.</p>#}
-{#                            </div>#}
-{#                            <div class="col-xl-5">#}
-{#                                <div class="checklist">#}
-{#                                    <ul>#}
-{#                                        <li class="text-light"><strong>Service Category:</strong> Rubix Carabil Tower#}
-{#                                        </li>#}
-{#                                        <li class="text-light"><strong>Clients:</strong> David Malan</li>#}
-{#                                        <li class="text-light"><strong>Project Date:</strong> 13 June, 2020</li>#}
-{#                                        <li class="text-light"><strong>Avenue End Date:</strong> 22 July, 2023</li>#}
-{#                                        <li class="text-light"><strong>Locations:</strong> NewYork - 2546 Firs, USA</li>#}
-{#                                    </ul>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{##}
-{#                        <div class="row gy-30 gx-40 align-items-center">#}
-{#                            <div class="col-xl-6">#}
-{#                                <div class="page-img mb-0">#}
-{#                                    <img class="w-100 rounded-20"#}
-{#                                         src="{% static "assets/img/project/project_pop2_1.png" %}"#}
-{#                                         alt="portfolio Image">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                            <div class="col-xl-6">#}
-{#                                <h4 class="box-title text-white fw-medium">Services Benefits:</h4>#}
-{#                                <p class="text-light">We can do both. We can adhere to existing brand guidelines,#}
-{#                                    ensuring consistency, or help develop new ones if a client is looking for a fresh#}
-{#                                    identity. Our goal is to align the UI/UX design with the brand's overall strategy#}
-{#                                    product meets the needs.</p>#}
-{#                                <div class="checklist style3">#}
-{#                                    <ul>#}
-{#                                        <li class="text-light"><i class="far fa-check-circle"></i>We use the latest#}
-{#                                            diagnostic equipment#}
-{#                                        </li>#}
-{#                                        <li class="text-light"><i class="far fa-check-circle"></i>Automotive service our#}
-{#                                            clients receive#}
-{#                                        </li>#}
-{#                                        <li class="text-light"><i class="far fa-check-circle"></i>We are a member of#}
-{#                                            Professional Service#}
-{#                                        </li>#}
-{#                                        <li class="text-light"><i class="far fa-check-circle"></i>Digital how will#}
-{#                                            activities impact traditional#}
-{#                                        </li>#}
-{#                                        <li class="text-light"><i class="far fa-check-circle"></i>Architect and#}
-{#                                            technical engineer#}
-{#                                        </li>#}
-{#                                    </ul>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{#    </div>#}
-{#</div>#}
 
 <!--==============================
 	Footer Area
@@ -657,22 +606,21 @@ Contact Area
                                                                  style="width: 128px"
                                                                  alt="Realar"></a>
                             </div>
-                            <p class="about-text">Sharq Development – Zamonaviy, qulay va xavfsiz hayot tarzi!
-                                Biz mukammal sifat, zamonaviy arxitektura va yuqori darajadagi qulayliklarni taqdim
-                                etamiz.</p>
+                            <p class="about-text">{% trans "Sharq Development – Zamonaviy, qulay va xavfsiz hayot tarzi! Biz mukammal sifat, zamonaviy arxitektura va yuqori darajadagi qulayliklarni taqdim etamiz." %}</p>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget footer-widget">
-                        <h3 class="widget_title">Bog'lanish</h3>
+                        <h3 class="widget_title">{% trans "Bog'lanish" %}</h3>
                         <div class="th-widget-contact">
                             <div class="info-box_text">
                                 <div class="icon"><img src="{% static "assets/img/icon/location-dot.svg" %}" alt="img">
                                 </div>
                                 <div class="details">
-                                    <p>Tabassum mahallasi</p>
-                                    <p>Qarshi shahri</p>
+                                    <p>{% trans "Tabassum mahallasi" %}</p>
+                                    <p>{% trans "Qarshi shahri" %}</p>
                                 </div>
                             </div>
                             <div class="info-box_text">
@@ -700,13 +648,13 @@ Contact Area
                 </div>
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget">
-                        <h3 class="widget_title">Foydali havolalar</h3>
+                        <h3 class="widget_title">{% trans "Foydali havolalar" %}</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
-                                <li><a href="{% url "index" %}">Asosiy</a></li>
-                                <li><a href="{% url "about" %}">Biz haqimizda</a></li>
-                                <li><a href="{% url "apartments" %}">Xonadonlar</a></li>
-                                <li><a href="{% url "contact" %}">Bog'lanish</a></li>
+                                <li><a href="{% url "index" %}">{% trans "Asosiy" %}</a></li>
+                                <li><a href="{% url "about" %}">{% trans "Biz haqimizda" %}</a></li>
+                                <li><a href="{% url "apartments" %}">{% trans "Xonadonlar" %}</a></li>
+                                <li><a href="{% url "contact" %}">{% trans "Bog'lanish" %}</a></li>
 
                             </ul>
                         </div>
@@ -716,12 +664,13 @@ Contact Area
         </div>
     </div>
 
-        <div class="copyright-wrap bg-light">
+    <div class="copyright-wrap bg-light">
         <div class="container">
             <div class="row gy-3 align-items-center">
                 <div class="col-lg-6">
                     <p class="copyright-text">
-                        © 2025 <a href="{% url "index" %}">Sharq Development</a>. Barcha huquqlar himoyalangan.
+                        © 2025 <a href="{% url "index" %}">Sharq
+                        Development</a>. {% trans "Barcha huquqlar himoyalangan." %}
 
                     </p>
 
@@ -729,8 +678,9 @@ Contact Area
                 </div>
                 <div class="col-lg-6">
                     <div class="th-social justify-content-lg-end justify-content-center">
-                        <a target="_blank"   href="https://t.me/SHARQDEVELOPMENT_BOT/"><i class="fab fa-telegram"></i></a>
-                        <a  target="_blank"  href="https://www.instagram.com/sharq_development//"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://t.me/SHARQDEVELOPMENT_BOT/"><i class="fab fa-telegram"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/sharq_development//"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -786,5 +736,4 @@ All Js File
 </body>
 
 
-<!-- Mirrored from html.themeholy.com/realar/demo/home-2-op.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Jan 2025 06:38:21 GMT -->
 </html>

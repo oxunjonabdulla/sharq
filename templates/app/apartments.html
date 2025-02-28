@@ -1,3 +1,4 @@
+{% load i18n %}
 {% load static %}
 <!doctype html>
 <html class="no-js" lang="zxx" dir="ltr">
@@ -6,8 +7,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Sharq Biznes Turar Joy Majmuasi</title>
-    <meta name="author" content="Sharq Biznes Turar Joy Majmuasi">
+    <title>{% trans "Sharq Biznes Turar Joy Majmuasi" %}</title>
+    <meta name="author" content="{% trans "Sharq Biznes Turar Joy Majmuasi" %}">
     <meta name="description" content="Sharq Biznes Turar Joy Majmuasi">
     <meta name="keywords" content="Sharq Biznes Turar Joy Majmuasi">
     <meta name="robots" content="INDEX,FOLLOW">
@@ -117,7 +118,7 @@
                 </a></li>
             </ul>
         </div>
-    </div>
+1    </div>
 </div><!--==============================
     Sidemenu
 ============================== -->
@@ -189,23 +190,66 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-auto">
+                   <div class="col-auto">
                         <nav class="main-menu d-none d-lg-inline-block">
                             <ul>
                                 <li><a href="{% url 'index' %}">
-                                    Asosiy
+                                    {% trans "Asosiy" %}
                                 </a></li>
                                 <li><a href="{% url 'about' %}">
-                                    Biz haqimizda
+                                    {% trans "Biz haqimizda" %}
                                 </a></li>
                                 <li>
                                     <a href="{% url "apartments" %}">
-                                        Xonadonlar
+                                        {% trans "Xonadonlar" %}
                                     </a>
                                 </li>
                                 <li><a href="{% url "contact" %}">
-                                    Bog'lanish
+                                    {% trans "Bog'lanish" %}
                                 </a></li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="languageDropdown" role="button"
+                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                        {% with current_language=request.LANGUAGE_CODE %}
+                                            {% if current_language == "uz" %}
+                                                <img style="width: 44px;" src="{% static 'assets/img/flag/uz.png' %}"
+                                                     alt="Uzbek">
+                                            {% elif current_language == "en" %}
+                                                <img style="width: 44px;" src="{% static 'assets/img/flag/uk.png' %}"
+                                                     alt="English">
+                                            {% elif current_language == "ru" %}
+                                                <img style="width: 44px;"
+                                                     src="{% static 'assets/img/flag/russia.png' %}" alt="Russian">
+                                            {% endif %}
+                                        {% endwith %}
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                        <li>
+                                            <a href="{% url 'set_language' 'uz' %}" class="dropdown-item"
+                                               style="width: 120px">
+                                                <img style="width: 40px;" src="{% static 'assets/img/flag/uz.png' %}"
+                                                     alt="Uzbek"> Uzbek
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'set_language' 'en' %}" class="dropdown-item"
+                                               style="width: 120px">
+                                                <img style="width: 40px;" src="{% static 'assets/img/flag/uk.png' %}"
+                                                     alt="English"> English
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'set_language' 'ru' %}" class="dropdown-item"
+                                               style="width: 120px">
+                                                <img style="width: 40px;"
+                                                     src="{% static 'assets/img/flag/russia.png' %}" alt="Russian">
+                                                Russian
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
                             </ul>
                         </nav>
                         <div class="header-button d-flex d-lg-none">
@@ -216,9 +260,10 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-auto d-none d-xl-block">
+                     <div class="col-auto d-none d-xl-block">
                         <div class="header-button">
-                            <a href="{% url "contact" %}" class="th-btn style-border th-btn-icon">Hoziroq bog'lanish</a>
+                            <a href="{% url "contact" %}"
+                               class="th-btn style-border th-btn-icon">{% trans "Hoziroq bog'lanish" %}</a>
                         </div>
                     </div>
                 </div>
@@ -236,10 +281,10 @@ Breadcumb
         <div class="row justify-content-center">
             <div class="col-xl-9">
                 <div class="breadcumb-content">
-                    <h1 class="breadcumb-title">Xonadonlar</h1>
+                    <h1 class="breadcumb-title">{% trans "Xonadonlar" %}</h1>
                     <ul class="breadcumb-menu">
-                        <li><a href="{% url "index" %}">Asosiy</a></li>
-                        <li>Xonadonlar</li>
+                        <li><a href="{% url "index" %}">{% trans "Asosiy" %}</a></li>
+                        <li>{% trans "Xonadonlar" %}</li>
                     </ul>
                 </div>
             </div>
@@ -256,7 +301,7 @@ Breadcumb
             <div class="tab-pane fade show active" id="rent-tab-pane" role="tabpanel" aria-labelledby="rent-tab"
                  tabindex="0">
                 <form class="property-search-form">
-                    <label>Ko‘chmas Mulk Qidirish</label>
+                    <label>{% trans "Ko‘chmas Mulk Qidirish" %}</label>
                     <div class="form-group">
                         <i class="far fa-search"></i>
                         <input class="form-control" type="text" placeholder="Listing ID yoki Manzil">
@@ -272,7 +317,7 @@ Breadcumb
                         <option value="rating">Reyting</option>
                         <option value="date">Eng So‘nggi</option>
                     </select>
-                    <button class="th-btn" type="submit"><i class="far fa-search"></i> Qidirish</button>
+                    <button class="th-btn" type="submit"><i class="far fa-search"></i> {% trans "Qidirish" %}</button>
                 </form>
             </div>
             <div class="tab-pane fade" id="buy-tab-pane" role="tabpanel" aria-labelledby="buy-tab" tabindex="0">
@@ -293,7 +338,7 @@ Breadcumb
                         <option value="rating">Reyting</option>
                         <option value="date">Eng So‘nggi</option>
                     </select>
-                    <button class="th-btn" type="submit"><i class="far fa-search"></i> Qidirish</button>
+                    <button class="th-btn" type="submit"><i class="far fa-search"></i> {% trans "Qidirish" %}</button>
                 </form>
             </div>
         </div>
@@ -341,10 +386,10 @@ Breadcumb
                                     <div class="media-left">
                                         <h4 class="property-card-title"><a href="#">{{ apartment.title }}</a></h4>
                                         <h5 class="property-card-price">{{ apartment.area }} m2</h5>
-                                        <p class="property-card-location">Xonalar soni : {{ apartment.rooms }} ta</p>
+                                        <p class="property-card-location">{% trans "Xonalar soni" %} : {{ apartment.rooms }} {% trans "ta" %}</p>
                                     </div>
                                     <div class="btn-wrap">
-                                        <a href="#" class="th-btn style-border2 th-btn-icon">Batafsil</a>
+                                        <a href="#" class="th-btn style-border2 th-btn-icon">{% trans "Batafsil" %}</a>
                                     </div>
                                 </div>
                             </div>
@@ -365,7 +410,7 @@ Breadcumb
                                 0{{ apartment.id }}
                             </div>
                             <div class="property-card-details">
-                                <span class="property-card-subtitle">Uy</span>
+                                <span class="property-card-subtitle">{% trans "Uy" %}</span>
                                 <h4 class="property-card-title"><a href="#">{{ apartment.title }}</a></h4>
                                 <p class="property-card-text">{{ apartment.description }}</p>
                                 <div class="property-card-price-meta">
@@ -375,14 +420,14 @@ Breadcumb
                                     <span><img src="{% static "assets/img/icon/property-icon1-1.svg" %}"
                                                alt="img">{{ apartment.rooms }} ta</span>
                                     <span class="divider-line"></span>
-                                    <span><img src="{% static "assets/img/icon/property-icon1-2.svg" %}" alt="img">Hammom {{ apartment.rooms }} ta</span>
+                                    <span><img src="{% static "assets/img/icon/property-icon1-2.svg" %}" alt="img">{% trans "Hammom" %} {{ apartment.rooms }} ta</span>
                                     <span class="divider-line"></span>
                                     <span><img src="{% static "assets/img/icon/property-icon1-3.svg" %}"
                                                alt="img">{{ apartment.area }} m2</span>
                                 </div>
                                 <div class="property-btn-wrap">
 
-                                    <a href="#" class="th-btn style-border2 th-btn-icon">Batafsil</a>
+                                    <a href="#" class="th-btn style-border2 th-btn-icon">{% trans "Batafsil" %}</a>
                                 </div>
                             </div>
                         </div>
@@ -398,7 +443,7 @@ Breadcumb
                 <ul>
                     {% if apartments.has_previous %}
                         <li><a class="prev-page" href="?page={{ apartments.previous_page_number }}">
-                            <i class="far fa-arrow-left me-2"></i>Oldingi
+                            <i class="far fa-arrow-left me-2"></i>{% trans "Oldingi" %}
                         </a></li>
                     {% endif %}
 
@@ -412,7 +457,7 @@ Breadcumb
 
                     {% if apartments.has_next %}
                         <li><a class="next-page" href="?page={{ apartments.next_page_number }}">
-                            Keyingi<i class="far fa-arrow-right ms-2"></i>
+                            {% trans "Keyingi" %}<i class="far fa-arrow-right ms-2"></i>
                         </a></li>
                     {% endif %}
                 </ul>
@@ -440,22 +485,20 @@ Breadcumb
                                                                  style="width: 128px"
                                                                  alt="Realar"></a>
                             </div>
-                            <p class="about-text">Sharq Development – Zamonaviy, qulay va xavfsiz hayot tarzi!
-                                Biz mukammal sifat, zamonaviy arxitektura va yuqori darajadagi qulayliklarni taqdim
-                                etamiz.</p>
+                            <p class="about-text">{% trans "Sharq Development – Zamonaviy, qulay va xavfsiz hayot tarzi! Biz mukammal sifat, zamonaviy arxitektura va yuqori darajadagi qulayliklarni taqdim etamiz." %}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget footer-widget">
-                        <h3 class="widget_title">Bog'lanish</h3>
+                        <h3 class="widget_title">{% trans "Bog'lanish" %}</h3>
                         <div class="th-widget-contact">
                             <div class="info-box_text">
                                 <div class="icon"><img src="{% static "assets/img/icon/location-dot.svg" %}" alt="img">
                                 </div>
                                 <div class="details">
-                                    <p>Tabassum mahallasi</p>
-                                    <p>Qarshi shahri</p>
+                                    <p>{% trans "Tabassum mahallasi" %}</p>
+                                    <p>{% trans "Qarshi shahri" %}</p>
                                 </div>
                             </div>
                             <div class="info-box_text">
@@ -472,7 +515,7 @@ Breadcumb
                                     <img src="{% static "assets/img/icon/envelope.svg" %}" alt="img">
                                 </div>
                                 <div class="details">
-                                    <p><a class="info-box_link">Telegram bot</a>
+                                    <p><a class="info-box_link">{% trans "Telegram bot" %}</a>
                                     </p>
                                     <p><a target="_blank" href="https://t.me/SHARQDEVELOPMENT_BOT"
                                           class="info-box_link">@SHARQDEVELOPMENT_BOT</a></p>
@@ -483,13 +526,13 @@ Breadcumb
                 </div>
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget">
-                        <h3 class="widget_title">Foydali havolalar</h3>
+                        <h3 class="widget_title">{% trans "Foydali havolalar" %}</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
-                                <li><a href="{% url "index" %}">Asosiy</a></li>
-                                <li><a href="{% url "about" %}">Biz haqimizda</a></li>
-                                <li><a href="{% url "apartments" %}">Xonadonlar</a></li>
-                                <li><a href="{% url "contact" %}">Bog'lanish</a></li>
+                                <li><a href="{% url "index" %}">{% trans "Asosiy" %}</a></li>
+                                <li><a href="{% url "about" %}">{% trans "Biz haqimizda" %}</a></li>
+                                <li><a href="{% url "apartments" %}">{% trans "Xonadonlar" %}</a></li>
+                                <li><a href="{% url "contact" %}">{% trans "Bog'lanish" %}</a></li>
 
                             </ul>
                         </div>
@@ -503,7 +546,7 @@ Breadcumb
             <div class="row gy-3 align-items-center">
                 <div class="col-lg-6">
                     <p class="copyright-text">
-                        © 2025 <a href="{% url "index" %}">Sharq Development</a>. Barcha huquqlar himoyalangan.
+                        © 2025 <a href="{% url "index" %}">Sharq Development</a>. {% trans "Barcha huquqlar himoyalangan." %}
 
                     </p>
 
